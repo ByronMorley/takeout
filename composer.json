@@ -1,5 +1,5 @@
 {
-  "name": "rgb-software/silverstripe-booteek",
+  "name": "rgb-software/silverstripe-takeout",
   "description": "css framework for silverstripe",
   "type": "silverstripe-module",
   "homepage": "http://github.com/your-vendor-name/module-name",
@@ -14,7 +14,7 @@
   "require": {
   },
   "extra": {
-    "installer-name": "booteek",
+    "installer-name": "takeout",
     "screenshots": [
       "relative/path/screenshot1.png",
       "http://myhost.com/screenshot2.png"
