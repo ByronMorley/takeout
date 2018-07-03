@@ -1,0 +1,9 @@
+---
+Name: takeout
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - Takeout
+    - Icon
+    - ColorScheme

@@ -1,0 +1,249 @@
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+             TAKEOUT.LESS
+-----------------------------------------*/
+.to-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.to-title-wrapper,
+.to-image-wrapper,
+.to-button-wrapper,
+.to-icon-wrapper,
+.to-shape,
+.to-caption-wrapper {
+  position: absolute;
+  z-index: 200;
+}
+.to-menu-item {
+  background-color: #069;
+}
+.to-icon:hover {
+  color: #FFFFFF;
+}
+.to-menu {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.to-menu span {
+  display: block;
+  line-height: normal;
+}
+.to-menu > li > a {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+  transition: all 1s ease-in-out;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .to-menu > li > a {
+    height: 160px;
+  }
+}
+.to-menu .to-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.to-menu .to-image-wrapper,
+.to-menu .to-shape,
+.to-menu .to-button-wrapper,
+.to-menu .to-caption-wrapper,
+.to-menu .to-overlay,
+.to-menu .to-icon-wrapper {
+  display: none;
+}
+.to-menu.wordsworth .to-shape,
+.to-menu.wordsworth .to-icon-wrapper {
+  display: block;
+}
+.to-menu.wordsworth .to-icon-wrapper {
+  z-index: 210;
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.bottom {
+  border-bottom: 300px solid rgba(0, 0, 0, 0.3);
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.bottom.right {
+  border-left: 300px solid transparent;
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.bottom.left {
+  border-right: 300px solid transparent;
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.top {
+  border-top: 80px solid rgba(0, 0, 0, 0.3);
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.top.right {
+  border-left: 300px solid transparent;
+}
+.to-menu.wordsworth .to-menu-item:hover .triangle.top.left {
+  border-right: 300px solid transparent;
+}
+.to-menu.timeless .to-menu-item {
+  background-color: #000000;
+}
+.to-menu.timeless .to-menu-item:hover .to-image {
+  width: 140%;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .to-menu.timeless .to-menu-item:hover .to-image {
+    width: 120%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .to-menu.timeless .to-menu-item:hover .to-image {
+    width: 100%;
+  }
+}
+.to-menu.timeless .to-menu-item:hover .to-overlay {
+  z-index: 205;
+  display: block;
+}
+.to-menu.timeless .to-menu-item:hover .to-button {
+  text-decoration: underline;
+}
+.to-menu.timeless .to-image-wrapper {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.to-menu.timeless .to-image-wrapper .to-image {
+  width: 160%;
+  height: auto;
+  transition: ease all 1s;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .to-menu.timeless .to-image-wrapper .to-image {
+    width: 140%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .to-menu.timeless .to-image-wrapper .to-image {
+    width: 120%;
+  }
+}
+.to-menu.timeless .to-title-wrapper {
+  z-index: 210;
+}
+.to-menu.timeless .to-title {
+  display: block;
+}
+.to-menu.timeless .to-button-wrapper {
+  display: block;
+}
+.to-menu.timeless .to-overlay {
+  display: none;
+}
+.to-menu.renaissance .to-image-wrapper,
+.to-menu.renaissance .to-caption-wrapper {
+  display: block;
+}
+.to-menu.renaissance .to-icon,
+.to-menu.renaissance .to-overlay {
+  display: none;
+}
+.to-menu.renaissance .to-menu-item {
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  height: auto;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.to-menu.renaissance .to-menu-item:hover {
+  border: 1px solid #000000;
+}
+.to-menu.renaissance .to-title-wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.to-menu.renaissance .to-title-wrapper .to-title {
+  font-size: 16px;
+  padding: 2px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.to-menu.renaissance .to-image-wrapper {
+  position: relative;
+}
+.to-menu.renaissance .to-image-wrapper .to-image {
+  width: 100%;
+  height: auto;
+}
+.to-menu.renaissance .to-caption-wrapper {
+  position: relative;
+}
+.to-menu.renaissance .to-caption-wrapper .to-caption {
+  text-align: center;
+}
+.to-title {
+  position: relative;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+  color: #fff;
+  display: block;
+}
+.to-button-wrapper .to-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  transition: ease all 1s;
+}
+.to-icon-wrapper .to-icon {
+  color: #fff;
+  font-size: 64px;
+  padding: 10px;
+}
+.to-caption-wrapper .to-caption {
+  text-align: center;
+  font-style: italic;
+  color: #9D9D9D;
+}
+.alpha {
+  background-color: #6E348C;
+}
+.beta {
+  background-color: #22AFE6;
+}
+.gamma {
+  background-color: #F7A823;
+}
+.delta {
+  background-color: #E94190;
+}
+.epsilon {
+  background-color: #FFE140;
+}
+.zeta {
+  background-color: #A2C614;
+}
+.eta {
+  background-color: #8430C6;
+}
+.theta {
+  background-color: #F77462;
+}

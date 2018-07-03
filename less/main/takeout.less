@@ -1,0 +1,289 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+             TAKEOUT.LESS
+-----------------------------------------*/
+
+.to-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.to-title-wrapper, .to-image-wrapper, .to-button-wrapper, .to-icon-wrapper, .to-shape, .to-caption-wrapper {
+    position: absolute;
+    z-index: 200;
+}
+
+.to-menu-item {
+    background-color: #069;
+}
+.to-icon:hover {
+    color:@light-color;
+}
+
+.to-menu {
+
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    span {
+        display: block;
+        line-height: normal;
+    }
+
+    & > li {
+
+        & > a {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            height: 180px;
+
+            @media @SM {
+                height: 160px;
+            }
+            transition: all 1s ease-in-out;
+        }
+    }
+
+    .to-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .to-image-wrapper, .to-shape, .to-button-wrapper, .to-caption-wrapper, .to-overlay, .to-icon-wrapper {
+        display: none;
+    }
+
+    &.wordsworth {
+
+        .to-shape, .to-icon-wrapper {
+            display: block;
+        }
+
+        .to-icon-wrapper {
+            z-index: 210;
+        }
+
+        .to-menu-item {
+            &:hover {
+                .triangle {
+                    &.bottom {
+
+                        border-bottom: 300px solid rgba(0, 0, 0, 0.3);
+
+                        &.right {
+                            border-left: 300px solid transparent;
+                        }
+                        &.left {
+                            border-right: 300px solid transparent;
+                        }
+                    }
+                    &.top {
+
+                        border-top: 80px solid rgba(0, 0, 0, 0.3);
+
+                        &.right {
+                            border-left: 300px solid transparent;
+                        }
+                        &.left {
+                            border-right: 300px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.timeless {
+
+        .to-menu-item {
+            background-color: @dark-color;
+
+            &:hover {
+                .to-image {
+                    width: 140%;
+
+                    @media @SM {
+                        width: 120%;
+                    }
+                    @media @XS, @XXS {
+                        width: 100%;
+                    }
+                }
+                .to-overlay {
+                    z-index: 205;
+                    display: block;
+                }
+                .to-button {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .to-image-wrapper {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            .to-image {
+
+                width: 160%;
+                height: auto;
+                transition: ease all 1s;
+
+                @media @SM {
+                    width: 140%;
+                }
+
+                @media @XS, @XXS {
+                    width: 120%;
+                }
+            }
+        }
+        .to-title-wrapper {
+            z-index: 210;
+        }
+        .to-title {
+            display: block;
+
+        }
+        .to-button-wrapper {
+            display: block;
+        }
+        .to-overlay {
+            display: none;
+        }
+
+    }
+
+    &.renaissance {
+
+        .to-image-wrapper, .to-caption-wrapper {
+            display: block;
+        }
+
+        .to-icon, .to-overlay {
+            display: none;
+        }
+
+        .to-menu-item {
+            transition: all 0.3s ease-in-out;
+            padding: 10px;
+            height: auto;
+            background-color: @light-color;
+            border: 1px solid @light-color;
+
+            &:hover {
+                border: 1px solid @dark-color;
+            }
+        }
+
+        .to-title-wrapper {
+            position: relative;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            .to-title {
+                font-size: 16px;
+                padding: 2px;
+                margin-bottom: 10px;
+                color: @dark-color;
+            }
+        }
+        .to-image-wrapper {
+            position: relative;
+            .to-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .to-caption-wrapper {
+            position: relative;
+            .to-caption {
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.to-title {
+    position: relative;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: normal;
+    color: #fff;
+    display: block;
+}
+
+.to-button-wrapper {
+
+    .to-button {
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(0, 0, 0, 1);
+        color: @light-color;
+        padding: 10px 20px;
+        transition: ease all 1s;
+    }
+}
+
+.to-icon-wrapper {
+    .to-icon {
+        color: #fff;
+        font-size: 64px;
+        padding: 10px;
+    }
+}
+
+.to-caption-wrapper {
+    .to-caption {
+        text-align: center;
+        font-style: italic;
+        color: @mid-grey;
+    }
+}
+
+.alpha {
+    background-color: @alpha-color;
+}
+
+.beta {
+    background-color: @beta-color;
+}
+
+.gamma {
+    background-color: @gamma-color;
+}
+
+.delta {
+    background-color: @delta-color;
+}
+
+.epsilon {
+    background-color: @epsilon-color;
+}
+
+.zeta {
+    background-color: @zeta-color;
+}
+
+.eta {
+    background-color: @eta-color;
+}
+
+.theta {
+    background-color: @theta-color;
+}
+
+
+
+
