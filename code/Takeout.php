@@ -6,7 +6,8 @@ class Takeout extends DataExtension
 	public static $allowed_actions = array();
 
 	private static $db = array(
-		'Caption' => 'Varchar'
+		'Caption' => 'Varchar',
+		'RemoveFromMenu'=>'boolean'
 	);
 
 	private static $has_one = array(
@@ -38,10 +39,12 @@ class Takeout extends DataExtension
 		$uploadField = UploadField::create('MenuImage', 'Menu Image');
 
 		$caption = TextField::create('Caption');
+		$remove = CheckboxField::create('RemoveFromMenu');
 
 		$fields->addFieldsToTab('Root.Menu', array(
 			$uploadField,
 			$caption,
+			$remove,
 		));
 
 		$fields->addFieldToTab('Root.Menu',
