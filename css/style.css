@@ -223,27 +223,27 @@
   font-style: italic;
   color: #9D9D9D;
 }
-.alpha {
+.background-color.alpha {
   background-color: #6E348C;
 }
-.beta {
+.background-color.beta {
   background-color: #22AFE6;
 }
-.gamma {
+.background-color.gamma {
   background-color: #F7A823;
 }
-.delta {
+.background-color.delta {
   background-color: #E94190;
 }
-.epsilon {
+.background-color.epsilon {
   background-color: #FFE140;
 }
-.zeta {
+.background-color.zeta {
   background-color: #A2C614;
 }
-.eta {
+.background-color.eta {
   background-color: #8430C6;
 }
-.theta {
+.background-color.theta {
   background-color: #F77462;
 }
