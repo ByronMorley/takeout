@@ -59,7 +59,7 @@ class Takeout extends DataExtension
 			'MenuTemplate' => $this->owner->MenuTemplate(),
 			'Menu' => $this->owner->BlockHolders()
 		));
-		return $arrayData->renderWith('Menus/BluePeter');
+		return $arrayData->renderWith('Menu/BluePeter');
 	}
 
 	public function CurrentDirMenu()
@@ -68,7 +68,7 @@ class Takeout extends DataExtension
 			'MenuTemplate' => $this->owner->MenuTemplate(),
 			'Menu' => $this->owner
 		));
-		return $arrayData->renderWith('Menus/Takeout');
+		return $arrayData->renderWith('Menu/Takeout');
 	}
 
 	public function ChildMenu()
@@ -77,7 +77,7 @@ class Takeout extends DataExtension
 			'MenuTemplate' => $this->owner->MenuTemplate(),
 			'Menu' => $this->owner->Children()
 		));
-		return $arrayData->renderWith('Menus/Takeout');
+		return $arrayData->renderWith('Menu/Takeout');
 	}
 
 }

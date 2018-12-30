@@ -15,7 +15,7 @@
                         <% end_if %>
 					</div>
 					<div class="to-button-wrapper abs <% if $Parent.MenuTemplate.ButtonPosition %>$Parent.MenuTemplate.ButtonPosition<% else %>bottom right<% end_if %>">
-						<span class="to-button">Link</span>
+						<span class="to-button"><%t Misc.Link "Agor" %></span>
 					</div>
 					<div class="to-icon-wrapper abs <% if $Parent.MenuTemplate.IconPosition %>$Parent.MenuTemplate.IconPosition<% else %>bottom left<% end_if %>">
 						<i class="to-icon $Icon" aria-hidden="true"></i>
